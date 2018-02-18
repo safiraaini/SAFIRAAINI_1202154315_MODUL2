@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f2f5a"
+    android:padding="20sp"
+    tools:context="com.example.safiraaini.safiraaini_1202154315_modul2.MenuUtamaActivity">
+
+
+    <ImageView
+        android:id="@+id/ivegg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/egg" />
+
+    <TextView
+        android:id="@+id/tvpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/konvert"
+        android:layout_alignStart="@+id/konvert"
+        android:layout_below="@+id/ivegg2"
+        android:layout_marginTop="47dp"
+        android:text="Choose the Menu :"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/konvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvpm"
+        android:paddingTop="20sp"
+        android:gravity="">
+    <RadioButton
+        android:id="@+id/rbdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Dine In"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rbdi"
+            android:layout_alignStart="@+id/rbdi"
+            android:layout_below="@+id/rbdi"
+            android:text="Take Away"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="proses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/konvert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="#f3b507"
+        android:text="Order Now" />
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f2f5a"
+    android:padding="16sp"
+    tools:context="com.example.safiraaini.safiraaini_1202154315_modul2.MenuDineInActivity">
+
+
+    <TextView
+        android:id="@+id/tvdc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Customer Detail" />
+
+    <EditText
+        android:id="@+id/etnc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@android:color/white"
+        android:hint="Name" />
+
+    <TextView
+        android:id="@+id/tvnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etnc"
+        android:layout_alignStart="@+id/etnc"
+        android:layout_below="@+id/etnc"
+        android:layout_marginTop="29dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Nomor Meja :" />
+
+    <Spinner
+        android:id="@+id/spinnernm"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvnm"
+        android:entries="@array/nomormeja"/>
+    <Button
+        android:id="@+id/button"
+        android:onClick="food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnernm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="#f3b507"
+        android:text="Choose the Food"
+        />
+
+
+</RelativeLayout>

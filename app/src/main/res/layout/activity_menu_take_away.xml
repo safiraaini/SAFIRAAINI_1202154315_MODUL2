@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f2f5a"
+    android:padding="20sp"
+    tools:context="com.example.safiraaini.safiraaini_1202154315_modul2.MenuTakeAwayActivity">
+
+
+    <TextView
+        android:id="@+id/tvidpsn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="Identitas Pemesanan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvidpsn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:background="@android:color/white"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etaddress"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etphone"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/etnotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etaddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etnotes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="#f3b507"
+        android:text="Choose the Food" />
+
+
+
+
+</RelativeLayout>

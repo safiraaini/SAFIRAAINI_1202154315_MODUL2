@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nomormeja">arraynomormeja
+        <item>NOMOR MEJA 1</item>
+        <item>NOMOR MEJA 2</item>
+        <item>NOMOR MEJA 3</item>
+        <item>NOMOR MEJA 4</item>
+        <item>NOMOR MEJA 5</item>
+        <item>NOMOR MEJA 6</item>
+
+    </string-array>
+    </resources>
